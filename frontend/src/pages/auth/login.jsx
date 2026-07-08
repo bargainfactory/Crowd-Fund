@@ -11,7 +11,7 @@ import toast from 'react-hot-toast';
 
 export default function LoginPage() {
   const { t } = useTranslation('common');
-  const { login } = useAuth();
+  const { login, verifyTwoFactor } = useAuth();
   const router = useRouter();
 
   const [form, setForm] = useState({ email: '', password: '' });
@@ -61,8 +61,7 @@ export default function LoginPage() {
 
     setLoading(true);
     try {
-      const { verifyTwoFactor } = useAuth();
-      const result = await verifyTwoFactor(twoFAState.tempToken, twoFAState.code);
+      await verifyTwoFactor(twoFAState.tempToken, twoFAState.code);
       toast.success('Login successful!');
       router.push(router.query.returnUrl || '/dashboard');
     } catch (err) {
