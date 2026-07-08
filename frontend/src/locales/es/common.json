@@ -3,23 +3,86 @@
     "campaigns": "Campañas",
     "community": "Comunidad",
     "featured": "Destacadas",
-    "login": "Iniciar Sesión",
+    "login": "Iniciar sesión",
     "register": "Comenzar",
     "dashboard": "Panel",
-    "logout": "Cerrar Sesión",
-    "startCampaign": "Iniciar Campaña"
+    "admin": "Panel de administración",
+    "logout": "Cerrar sesión",
+    "startCampaign": "Crear campaña"
   },
   "hero": {
-    "title": "Financia el Futuro de",
-    "titleHighlight": "Tu Comunidad",
-    "description": "Únete a miles de personas que recaudan fondos para proyectos comunitarios, educación, salud e infraestructura en África.",
-    "startCampaign": "Iniciar una Campaña",
-    "exploreCampaigns": "Explorar Campañas"
+    "title": "Financia el futuro de",
+    "titleHighlight": "Tu comunidad",
+    "description": "Únete a miles de personas que recaudan fondos para proyectos comunitarios, educación, salud e infraestructura en África y más allá.",
+    "startCampaign": "Crear una campaña",
+    "exploreCampaigns": "Explorar campañas"
   },
-  "donate": { "title": "Hacer una Donación" },
+  "features": {
+    "title": "¿Por qué CrowdfundAfrica?",
+    "subtitle": "Hecho para África, accesible para el mundo",
+    "mobile": { "title": "Dinero móvil", "desc": "M-Pesa, Orange Money, Wave y más métodos de pago africanos" },
+    "blockchain": { "title": "Transparencia blockchain", "desc": "Donaciones opcionales en cadena para total transparencia mediante Polygon" },
+    "multilingual": { "title": "5 idiomas", "desc": "Inglés, francés, español, árabe y wólof disponibles" },
+    "currency": { "title": "Multidivisa", "desc": "USD, EUR, CFA, NGN, KES y más de 15 divisas con tasas en tiempo real" }
+  },
+  "categories": { "title": "Explorar por categoría" },
+  "featured": {
+    "title": "Campañas destacadas",
+    "subtitle": "Genera un impacto real hoy",
+    "viewAll": "Ver todas las campañas"
+  },
+  "village": {
+    "title": "Financia tu pueblo en conjunto",
+    "description": "Usuarios de un mismo pueblo como Fadiouth pueden colaborar para recaudar fondos con objetivos compartidos: infraestructura, escuelas, pozos de agua y mucho más.",
+    "cta": "Ver campañas comunitarias"
+  },
+  "cta": {
+    "title": "¿Listo para marcar la diferencia?",
+    "description": "Únete a miles de agentes de cambio que recaudan dinero para causas que importan en África y el mundo.",
+    "register": "Crear cuenta gratis",
+    "browse": "Explorar campañas"
+  },
+  "campaigns": { "title": "Explorar campañas", "found": "campañas encontradas" },
+  "login": {
+    "title": "Iniciar sesión",
+    "subtitle": "¿No tienes una cuenta?",
+    "register": "Crea una",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "submit": "Iniciar sesión"
+  },
+  "register": {
+    "title": "Crea tu cuenta",
+    "hasAccount": "¿Ya tienes una cuenta?",
+    "login": "Inicia sesión"
+  },
+  "create": {
+    "title": "Crear una campaña",
+    "subtitle": "Comparte tu causa con el mundo en cuatro sencillos pasos."
+  },
+  "donate": { "title": "Hacer una donación" },
   "search": { "placeholder": "Buscar campañas..." },
   "footer": {
-    "tagline": "Empoderando a comunidades de África y el mundo para financiar el cambio que quieren ver.",
-    "copyright": "© 2026 CrowdfundAfrica. Todos los derechos reservados."
+    "browseCampaigns": "Explorar campañas",
+    "startCampaign": "Crear una campaña",
+    "featured": "Causas destacadas",
+    "communities": "Comunidades",
+    "education": "Educación",
+    "about": "Sobre nosotros",
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio",
+    "contact": "Contacto",
+    "faq": "Preguntas frecuentes",
+    "howItWorks": "Cómo funciona",
+    "fees": "Comisiones y precios",
+    "transparency": "Transparencia",
+    "platform": "Plataforma",
+    "community": "Comunidad",
+    "support": "Soporte",
+    "tagline": "Empoderamos a las comunidades de África y el mundo para financiar el cambio que quieren ver.",
+    "paymentPartners": "Pagos seguros mediante",
+    "copyright": "© 2026 CrowdfundAfrica. Todos los derechos reservados.",
+    "secured": "Protegido con TLS 1.3"
   }
 }

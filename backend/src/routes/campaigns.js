@@ -52,4 +52,44 @@ router.get('/meta/exchange-rates', async (req, res, next) => {
   }
 });
 
+// Public platform stats (real numbers for the homepage — no fabricated figures).
+// Cached in Redis for 5 minutes to keep the homepage fast.
+router.get('/meta/stats', async (req, res, next) => {
+  try {
+    const Campaign = require('../models/Campaign');
+    const { cache } = require('../config/redis');
+
+    const cached = await cache.get('public:stats').catch(() => null);
+    if (cached) return res.json({ success: true, data: cached });
+
+    const publicMatch = { status: { $in: ['active', 'completed'] } };
+    const [agg, countries] = await Promise.all([
+      Campaign.aggregate([
+        { $match: publicMatch },
+        {
+          $group: {
+            _id: null,
+            totalRaised: { $sum: '$raisedAmount' },
+            totalDonors: { $sum: '$donorCount' },
+            totalCampaigns: { $sum: 1 }
+          }
+        }
+      ]),
+      Campaign.distinct('location.country', publicMatch)
+    ]);
+
+    const data = {
+      totalRaised: agg[0]?.totalRaised || 0,
+      totalDonors: agg[0]?.totalDonors || 0,
+      totalCampaigns: agg[0]?.totalCampaigns || 0,
+      totalCountries: (countries || []).filter(Boolean).length
+    };
+
+    await cache.set('public:stats', data, 300).catch(() => {});
+    res.json({ success: true, data });
+  } catch (error) {
+    next(error);
+  }
+});
+
 module.exports = router;

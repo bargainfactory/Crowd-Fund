@@ -81,7 +81,8 @@ export const campaignAPI = {
     headers: { 'Content-Type': 'multipart/form-data' }
   }),
   moderate: (id, data) => api.patch(`/campaigns/${id}/moderate`, data),
-  getExchangeRates: () => api.get('/campaigns/meta/exchange-rates')
+  getExchangeRates: () => api.get('/campaigns/meta/exchange-rates'),
+  getStats: () => api.get('/campaigns/meta/stats')
 };
 
 // ─── Payment APIs ───────────────────────────────────────────────────────────

@@ -1,25 +1,88 @@
 {
   "nav": {
-    "campaigns": "Projets yi",
-    "community": "Bokk",
-    "featured": "Dëkkal",
+    "campaigns": "Projet yi",
+    "community": "Mbokk",
+    "featured": "Yu gën a siiw",
     "login": "Dugg",
-    "register": "Bind sa xëtu",
-    "dashboard": "Tableau de bord",
-    "logout": "Genn",
-    "startCampaign": "Tàmbalee Projet"
+    "register": "Tàmbali",
+    "dashboard": "Tablo bi",
+    "admin": "Panel bu admin",
+    "logout": "Génn",
+    "startCampaign": "Tàmbali benn projet"
   },
   "hero": {
-    "title": "Finanse Avenir",
-    "titleHighlight": "Sa Gokh",
-    "description": "Jëkkël ak ñaari fan bu ñi ci kanam jox benn loxo ci nattu mbindaan, jàng, yaram ak mbëj-àlal ci Afrig ak aduna.",
-    "startCampaign": "Tàmbalee Projet",
-    "exploreCampaigns": "Xool Projets yi"
+    "title": "Finanse ëllëg bu",
+    "titleHighlight": "sa mbokk",
+    "description": "Bokkal ak junniy nit ñuy dajale xaalis ngir projet yu mbokk, njàng, wér-gu-yaram ak mbëj-àlal ci Afrig ak àddina si.",
+    "startCampaign": "Tàmbali benn projet",
+    "exploreCampaigns": "Xool projet yi"
   },
-  "donate": { "title": "Jox biir" },
-  "search": { "placeholder": "Seet projets yi..." },
+  "features": {
+    "title": "Lu tax CrowdfundAfrica?",
+    "subtitle": "Defaraat ngir Afrig, jàppandi ci àddina si",
+    "mobile": { "title": "Xaalisu telefon", "desc": "M-Pesa, Orange Money, Wave ak yeneen fey yu Afrig" },
+    "blockchain": { "title": "Leeral bu blockchain", "desc": "Ndimbal yu mën a nekk ci blockchain ngir leeral bu mat sëkk ak Polygon" },
+    "multilingual": { "title": "5 làkk", "desc": "Àngale, Farañse, Español, Araab ak Wolof" },
+    "currency": { "title": "Xaalis yu bare", "desc": "USD, EUR, CFA, NGN, KES ak lu ëpp 15 xaalis ak njëg yu bees" }
+  },
+  "categories": { "title": "Xoolal ci ay kàtteg" },
+  "featured": {
+    "title": "Projet yu siiw",
+    "subtitle": "Def benn njariñ bu wóor tey",
+    "viewAll": "Xool projet yépp"
+  },
+  "village": {
+    "title": "Finanseleen seen dëkk ndaje",
+    "description": "Way-jëfandikoo yu bokk benn dëkk ni Fadiouth mën nañu ligéey ndaje ngir dajale xaalis ci yëf yu bokk — mbëj-àlal, daara, teen yu ndox ak yu ci des.",
+    "cta": "Xool projet yu mbokk"
+  },
+  "cta": {
+    "title": "Ndax yaa jekk ngir def coppite?",
+    "description": "Bokkal ak junniy way-coppite yuy dajale xaalis ngir mébét yu am solo ci Afrig ak àddina si.",
+    "register": "Sos benn kont bu amul fay",
+    "browse": "Xool projet yi"
+  },
+  "campaigns": { "title": "Xool projet yi", "found": "projet yu ñu gis" },
+  "login": {
+    "title": "Dugg",
+    "subtitle": "Amuloo kont?",
+    "register": "Sos benn",
+    "email": "Adrees imeel",
+    "password": "Baatu-jàll",
+    "forgotPassword": "Fàtte nga sa baatu-jàll?",
+    "submit": "Dugg"
+  },
+  "register": {
+    "title": "Sos sa kont",
+    "hasAccount": "Am nga ba noppi kont?",
+    "login": "Dugg"
+  },
+  "create": {
+    "title": "Tàmbali benn projet",
+    "subtitle": "Séddoole sa mébét ak àddina si ci ñeenti tànk yu yomb."
+  },
+  "donate": { "title": "Jox ndimbal" },
+  "search": { "placeholder": "Seet projet yi..." },
   "footer": {
-    "tagline": "Yokk dëkkar ak xam-xam ci gox-gox Afrig ak aduna ngir fi lañu bëgg di def.",
-    "copyright": "© 2026 CrowdfundAfrica. Droit yépp dañu leen kees."
+    "browseCampaigns": "Xool projet yi",
+    "startCampaign": "Tàmbali benn projet",
+    "featured": "Mébét yu siiw",
+    "communities": "Mbokk yi",
+    "education": "Njàng",
+    "about": "Ci sunuy mbir",
+    "privacy": "Politik bu sutura",
+    "terms": "Sart yu jëfandikoo",
+    "contact": "Jokkoo",
+    "faq": "Laaj yu bare",
+    "howItWorks": "Naka lay doxe",
+    "fees": "Fay ak njëg",
+    "transparency": "Leeral",
+    "platform": "Platform bi",
+    "community": "Mbokk",
+    "support": "Ndimbal",
+    "tagline": "Dooleel mbokk yi ci Afrig ak àddina si ngir finanse coppite gi ñu bëgg a gis.",
+    "paymentPartners": "Fey yu wóor ak",
+    "copyright": "© 2026 CrowdfundAfrica. Sañ-sañ yépp dañu leen aar.",
+    "secured": "Aar ak TLS 1.3"
   }
 }

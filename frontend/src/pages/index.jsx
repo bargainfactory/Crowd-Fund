@@ -89,7 +89,11 @@ export default function Home({ featuredCampaigns, stats }) {
               <div className="animate-fade-in">
                 <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm mb-6">
                   <Zap className="w-4 h-4 text-africa-gold" />
-                  <span>Trusted by 50,000+ donors worldwide</span>
+                  <span>
+                    {stats?.totalDonors > 0
+                      ? `Join ${stats.totalDonors.toLocaleString()} donors supporting African communities`
+                      : 'Transparent crowdfunding built for Africa'}
+                  </span>
                 </div>
 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -110,20 +114,22 @@ export default function Home({ featuredCampaigns, stats }) {
                   </Link>
                 </div>
 
-                {/* Stats row */}
-                <div className="flex flex-wrap gap-8 mt-10 pt-8 border-t border-white/20">
-                  {[
-                    { label: 'Raised', value: `$${((stats?.totalRaised || 2400000) / 1000000).toFixed(1)}M+` },
-                    { label: 'Donors', value: `${((stats?.totalDonors || 50000) / 1000).toFixed(0)}K+` },
-                    { label: 'Campaigns', value: `${(stats?.totalCampaigns || 1200)}+` },
-                    { label: 'Countries', value: '40+' }
-                  ].map(({ label, value }) => (
-                    <div key={label}>
-                      <p className="text-2xl font-bold text-white">{value}</p>
-                      <p className="text-sm text-primary-200">{label}</p>
-                    </div>
-                  ))}
-                </div>
+                {/* Stats row — real platform figures; hidden until there is data */}
+                {stats?.totalCampaigns > 0 && (
+                  <div className="flex flex-wrap gap-8 mt-10 pt-8 border-t border-white/20">
+                    {[
+                      { label: 'Raised', value: formatCompact(stats.totalRaised, true) },
+                      { label: 'Donors', value: formatCompact(stats.totalDonors) },
+                      { label: 'Campaigns', value: formatCompact(stats.totalCampaigns) },
+                      { label: 'Countries', value: `${stats.totalCountries || 0}` }
+                    ].map(({ label, value }) => (
+                      <div key={label}>
+                        <p className="text-2xl font-bold text-white">{value}</p>
+                        <p className="text-sm text-primary-200">{label}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Hero image / campaign preview */}
@@ -158,16 +164,20 @@ export default function Home({ featuredCampaigns, stats }) {
                   )}
                 </div>
 
-                {/* Floating donation notification */}
-                <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 max-w-xs animate-fade-in">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-                    <Heart className="w-5 h-5 text-green-600 fill-green-600" />
+                {/* Floating notification — real featured-campaign metric, hidden if none */}
+                {featuredCampaigns?.[0]?.donorCount > 0 && (
+                  <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 max-w-xs animate-fade-in">
+                    <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                      <Heart className="w-5 h-5 text-green-600 fill-green-600" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500">Trending now</p>
+                      <p className="text-sm font-semibold text-gray-900">
+                        {featuredCampaigns[0].donorCount.toLocaleString()} people backed &ldquo;{featuredCampaigns[0].title}&rdquo;
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-xs text-gray-500">Just donated</p>
-                    <p className="text-sm font-semibold text-gray-900">Amara from Dakar donated $25</p>
-                  </div>
-                </div>
+                )}
               </div>
             </div>
           </div>
@@ -412,14 +422,30 @@ function clsx(...args) {
   return args.filter(Boolean).join(' ');
 }
 
+// Compact number formatting for hero stats (1.2M, 45K, 900). `money` prefixes $.
+function formatCompact(n, money = false) {
+  const num = Number(n) || 0;
+  const prefix = money ? '$' : '';
+  if (num >= 1_000_000) return `${prefix}${(num / 1_000_000).toFixed(1)}M+`;
+  if (num >= 1_000) return `${prefix}${(num / 1_000).toFixed(0)}K+`;
+  return `${prefix}${num.toLocaleString()}`;
+}
+
 export async function getServerSideProps({ locale }) {
   let featuredCampaigns = [];
-  let stats = {};
+  let stats = null;
 
-  try {
-    const { data } = await campaignAPI.getAll({ limit: 6, featured: 'true', status: 'active' });
-    featuredCampaigns = data?.data || [];
-  } catch {}
+  const [featuredRes, statsRes] = await Promise.allSettled([
+    campaignAPI.getAll({ limit: 6, featured: 'true', status: 'active' }),
+    campaignAPI.getStats()
+  ]);
+
+  if (featuredRes.status === 'fulfilled') {
+    featuredCampaigns = featuredRes.value?.data?.data || [];
+  }
+  if (statsRes.status === 'fulfilled') {
+    stats = statsRes.value?.data?.data || null;
+  }
 
   return {
     props: {
