@@ -1,0 +1,25 @@
+# CrowdfundAfrica
+
+> CrowdfundAfrica is a multilingual, multi-currency crowdfunding platform that connects communities across Africa and the world. It combines African mobile-money payments, live multi-currency conversion, optional blockchain transparency, and community ("village") group fundraising to make raising and donating funds accessible to everyone.
+
+CrowdfundAfrica exists to remove the barriers that keep African communities from raising money for the causes that matter to them: education, health, clean water, infrastructure, agriculture, and disaster relief. Anyone can start a campaign in minutes and receive donations through the payment methods people actually use locally.
+
+## What makes CrowdfundAfrica different
+- **African-first payments**: Accepts mobile money (M-Pesa, Orange Money, Wave), local cards, and bank transfers via Flutterwave and Paystack, alongside Stripe for international donors.
+- **Multi-currency by default**: Donors give in their currency (USD, EUR, CFA, NGN, KES and 15+ more) with live exchange rates; campaign owners see funds in theirs.
+- **Blockchain transparency (optional)**: Campaigns can enable on-chain escrow and public donation logs on Polygon, so donors can independently verify where money goes.
+- **Community / village fundraising**: People from the same village or community can co-manage a single campaign and coordinate shared goals like water wells or schools.
+- **Truly multilingual**: Full interface in English, French, Spanish, Arabic, and Wolof, with automatic language detection.
+
+## Key pages
+- [Home](https://crowdfundafrica.com/): Overview, featured campaigns, and how the platform works.
+- [Browse campaigns](https://crowdfundafrica.com/campaigns): Search and filter active fundraising campaigns by category, country, and cause.
+- [Start a campaign](https://crowdfundafrica.com/campaigns/create): Create a fundraising campaign.
+- [Register](https://crowdfundafrica.com/auth/register): Create a free account.
+
+## Categories
+Community, Education, Health, Infrastructure, Disaster Relief, Agriculture.
+
+## Contact
+- Website: https://crowdfundafrica.com
+- Support: support@crowdfundafrica.com

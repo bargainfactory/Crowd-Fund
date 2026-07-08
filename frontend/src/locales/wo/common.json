@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "campaigns": "Projets yi",
+    "community": "Bokk",
+    "featured": "Dëkkal",
+    "login": "Dugg",
+    "register": "Bind sa xëtu",
+    "dashboard": "Tableau de bord",
+    "logout": "Genn",
+    "startCampaign": "Tàmbalee Projet"
+  },
+  "hero": {
+    "title": "Finanse Avenir",
+    "titleHighlight": "Sa Gokh",
+    "description": "Jëkkël ak ñaari fan bu ñi ci kanam jox benn loxo ci nattu mbindaan, jàng, yaram ak mbëj-àlal ci Afrig ak aduna.",
+    "startCampaign": "Tàmbalee Projet",
+    "exploreCampaigns": "Xool Projets yi"
+  },
+  "donate": { "title": "Jox biir" },
+  "search": { "placeholder": "Seet projets yi..." },
+  "footer": {
+    "tagline": "Yokk dëkkar ak xam-xam ci gox-gox Afrig ak aduna ngir fi lañu bëgg di def.",
+    "copyright": "© 2026 CrowdfundAfrica. Droit yépp dañu leen kees."
+  }
+}

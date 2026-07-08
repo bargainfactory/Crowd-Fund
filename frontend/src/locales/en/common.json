@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "campaigns": "Campaigns",
+    "community": "Community",
+    "featured": "Featured",
+    "login": "Login",
+    "register": "Get Started",
+    "dashboard": "Dashboard",
+    "admin": "Admin Panel",
+    "logout": "Logout",
+    "startCampaign": "Start Campaign"
+  },
+  "hero": {
+    "title": "Fund the Future of",
+    "titleHighlight": "Your Community",
+    "description": "Join thousands raising money for community projects, education, health, and infrastructure across Africa and beyond.",
+    "startCampaign": "Start a Campaign",
+    "exploreCampaigns": "Explore Campaigns"
+  },
+  "features": {
+    "title": "Why CrowdfundAfrica?",
+    "subtitle": "Built for Africa, accessible to the world",
+    "mobile": { "title": "Mobile Money", "desc": "M-Pesa, Orange Money, Wave & more African payment methods" },
+    "blockchain": { "title": "Blockchain Transparent", "desc": "Optional on-chain donations for full transparency via Polygon" },
+    "multilingual": { "title": "5 Languages", "desc": "English, French, Spanish, Arabic & Wolof supported" },
+    "currency": { "title": "Multi-Currency", "desc": "USD, EUR, CFA, NGN, KES and 15+ currencies with live rates" }
+  },
+  "categories": { "title": "Browse by Category" },
+  "featured": {
+    "title": "Featured Campaigns",
+    "subtitle": "Make a real impact today",
+    "viewAll": "View All Campaigns"
+  },
+  "village": {
+    "title": "Fund Your Village Together",
+    "description": "Users from the same village like Fadiouth can collaborate to raise funds for shared goals — infrastructure, schools, water wells, and more.",
+    "cta": "Browse Community Campaigns"
+  },
+  "cta": {
+    "title": "Ready to Make a Difference?",
+    "description": "Join thousands of change-makers raising money for causes that matter across Africa and the world.",
+    "register": "Create Free Account",
+    "browse": "Browse Campaigns"
+  },
+  "campaigns": { "title": "Browse Campaigns", "found": "campaigns found" },
+  "login": {
+    "title": "Sign In",
+    "subtitle": "Don't have an account?",
+    "register": "Create one",
+    "email": "Email Address",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "submit": "Sign In"
+  },
+  "register": {
+    "title": "Create your account",
+    "hasAccount": "Already have an account?",
+    "login": "Sign in"
+  },
+  "donate": { "title": "Make a Donation" },
+  "search": { "placeholder": "Search campaigns..." },
+  "footer": {
+    "browseCampaigns": "Browse Campaigns",
+    "startCampaign": "Start a Campaign",
+    "featured": "Featured Causes",
+    "communities": "Communities",
+    "education": "Education",
+    "about": "About Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "howItWorks": "How It Works",
+    "fees": "Fees & Pricing",
+    "transparency": "Transparency",
+    "platform": "Platform",
+    "community": "Community",
+    "support": "Support",
+    "tagline": "Empowering communities across Africa and the world to fund the change they want to see.",
+    "paymentPartners": "Secure payments via",
+    "copyright": "© 2026 CrowdfundAfrica. All rights reserved.",
+    "secured": "Secured with TLS 1.3"
+  }
+}

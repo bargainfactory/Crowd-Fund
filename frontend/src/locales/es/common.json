@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "campaigns": "Campañas",
+    "community": "Comunidad",
+    "featured": "Destacadas",
+    "login": "Iniciar Sesión",
+    "register": "Comenzar",
+    "dashboard": "Panel",
+    "logout": "Cerrar Sesión",
+    "startCampaign": "Iniciar Campaña"
+  },
+  "hero": {
+    "title": "Financia el Futuro de",
+    "titleHighlight": "Tu Comunidad",
+    "description": "Únete a miles de personas que recaudan fondos para proyectos comunitarios, educación, salud e infraestructura en África.",
+    "startCampaign": "Iniciar una Campaña",
+    "exploreCampaigns": "Explorar Campañas"
+  },
+  "donate": { "title": "Hacer una Donación" },
+  "search": { "placeholder": "Buscar campañas..." },
+  "footer": {
+    "tagline": "Empoderando a comunidades de África y el mundo para financiar el cambio que quieren ver.",
+    "copyright": "© 2026 CrowdfundAfrica. Todos los derechos reservados."
+  }
+}

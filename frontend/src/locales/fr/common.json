@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "campaigns": "Campagnes",
+    "community": "Communauté",
+    "featured": "En Vedette",
+    "login": "Connexion",
+    "register": "Commencer",
+    "dashboard": "Tableau de Bord",
+    "admin": "Panneau Admin",
+    "logout": "Déconnexion",
+    "startCampaign": "Lancer une Campagne"
+  },
+  "hero": {
+    "title": "Financez l'Avenir de",
+    "titleHighlight": "Votre Communauté",
+    "description": "Rejoignez des milliers de personnes qui collectent des fonds pour des projets communautaires, l'éducation, la santé et les infrastructures en Afrique.",
+    "startCampaign": "Lancer une Campagne",
+    "exploreCampaigns": "Explorer les Campagnes"
+  },
+  "features": {
+    "title": "Pourquoi CrowdfundAfrica?",
+    "subtitle": "Construit pour l'Afrique, accessible au monde entier",
+    "mobile": { "title": "Mobile Money", "desc": "M-Pesa, Orange Money, Wave et d'autres modes de paiement africains" },
+    "blockchain": { "title": "Transparent Blockchain", "desc": "Dons en chaîne optionnels pour une transparence totale via Polygon" },
+    "multilingual": { "title": "5 Langues", "desc": "Anglais, Français, Espagnol, Arabe et Wolof supportés" },
+    "currency": { "title": "Multi-Devises", "desc": "USD, EUR, CFA, NGN, KES et plus de 15 devises avec taux en temps réel" }
+  },
+  "categories": { "title": "Parcourir par Catégorie" },
+  "featured": {
+    "title": "Campagnes en Vedette",
+    "subtitle": "Faites un impact réel aujourd'hui",
+    "viewAll": "Voir Toutes les Campagnes"
+  },
+  "village": {
+    "title": "Financez Votre Village Ensemble",
+    "description": "Les utilisateurs du même village comme Fadiouth peuvent collaborer pour atteindre des objectifs communs — infrastructures, écoles, puits, et bien plus.",
+    "cta": "Parcourir les Campagnes Communautaires"
+  },
+  "cta": {
+    "title": "Prêt à Faire la Différence?",
+    "description": "Rejoignez des milliers d'agents du changement qui collectent des fonds pour des causes importantes en Afrique et dans le monde.",
+    "register": "Créer un Compte Gratuit",
+    "browse": "Parcourir les Campagnes"
+  },
+  "campaigns": { "title": "Parcourir les Campagnes", "found": "campagnes trouvées" },
+  "login": {
+    "title": "Se Connecter",
+    "subtitle": "Pas encore de compte?",
+    "register": "En créer un",
+    "email": "Adresse E-mail",
+    "password": "Mot de Passe",
+    "forgotPassword": "Mot de passe oublié?",
+    "submit": "Se Connecter"
+  },
+  "register": {
+    "title": "Créer votre compte",
+    "hasAccount": "Vous avez déjà un compte?",
+    "login": "Se connecter"
+  },
+  "donate": { "title": "Faire un Don" },
+  "search": { "placeholder": "Rechercher des campagnes..." },
+  "footer": {
+    "browseCampaigns": "Parcourir les Campagnes",
+    "startCampaign": "Lancer une Campagne",
+    "featured": "Causes en Vedette",
+    "communities": "Communautés",
+    "education": "Éducation",
+    "about": "À Propos",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "howItWorks": "Comment ça Marche",
+    "fees": "Frais et Tarifs",
+    "transparency": "Transparence",
+    "platform": "Plateforme",
+    "community": "Communauté",
+    "support": "Support",
+    "tagline": "Donner le pouvoir aux communautés africaines et mondiales de financer le changement qu'elles veulent voir.",
+    "paymentPartners": "Paiements sécurisés via",
+    "copyright": "© 2026 CrowdfundAfrica. Tous droits réservés.",
+    "secured": "Sécurisé avec TLS 1.3"
+  }
+}

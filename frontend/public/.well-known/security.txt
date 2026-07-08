@@ -1,0 +1,6 @@
+# CrowdfundAfrica security policy
+Contact: mailto:security@crowdfundafrica.com
+Expires: 2027-01-01T00:00:00.000Z
+Preferred-Languages: en, fr
+Canonical: https://crowdfundafrica.com/.well-known/security.txt
+Policy: https://crowdfundafrica.com/security

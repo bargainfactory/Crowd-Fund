@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+.next/
+**/.next/
+out/
+dist/
+build/
+
+# Blockchain artifacts
+blockchain/artifacts/
+blockchain/cache/
+blockchain/typechain-types/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Testing / coverage
+coverage/
+.nyc_output/
+cypress/videos/
+cypress/screenshots/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+
+# Misc
+*.tsbuildinfo
+.vercel
