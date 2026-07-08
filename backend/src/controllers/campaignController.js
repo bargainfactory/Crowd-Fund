@@ -61,9 +61,21 @@ exports.getCampaigns = async (req, res, next) => {
       Campaign.countDocuments(query)
     ]);
 
+    // lean() strips Mongoose virtuals, so compute the display fields the
+    // frontend expects (progressPercentage, daysLeft) from the raw values.
+    const data = campaigns.map((c) => ({
+      ...c,
+      progressPercentage: c.targetAmount
+        ? Math.min(Math.round((c.raisedAmount / c.targetAmount) * 100), 100)
+        : 0,
+      daysLeft: c.deadline
+        ? Math.max(0, Math.ceil((new Date(c.deadline).getTime() - Date.now()) / 86400000))
+        : 0
+    }));
+
     res.status(200).json({
       success: true,
-      data: campaigns,
+      data,
       pagination: {
         page: parseInt(page),
         limit: parseInt(limit),
@@ -141,9 +153,20 @@ exports.getRecommendedCampaigns = async (req, res, next) => {
 
     const campaigns = await Campaign.aggregate(pipeline);
 
+    // Aggregation output has no Mongoose virtuals — add display fields.
+    const data = campaigns.map((c) => ({
+      ...c,
+      progressPercentage: c.targetAmount
+        ? Math.min(Math.round((c.raisedAmount / c.targetAmount) * 100), 100)
+        : 0,
+      daysLeft: c.deadline
+        ? Math.max(0, Math.ceil((new Date(c.deadline).getTime() - Date.now()) / 86400000))
+        : 0
+    }));
+
     res.status(200).json({
       success: true,
-      data: campaigns
+      data
     });
   } catch (error) {
     next(error);
